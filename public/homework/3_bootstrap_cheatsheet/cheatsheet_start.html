@@ -1,186 +1,411 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap Cheatsheet</title>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Bootstrap Cheatsheet</title>
 
-  <!-- Connect to Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Connect to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-  <!-- Connect to Font Awesome CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Connect to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Connect to our own custom CSS -->
-  <link rel="stylesheet" href="my_styles.css">
+    <!-- Connect to our own custom CSS -->
+    <link rel="stylesheet" href="my_styles.css">
 
-  <!-- Connect to Jquery (required before Bootstrap Javascript) -->
-  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Connect to Jquery (required before Bootstrap Javascript) -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
-  <!-- Connect to Bootstrap Javascript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Connect to Bootstrap Javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="cheatsheet_start.html">Bootstrap Cheatsheet</a>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="cheatsheet_start.html">Bootstrap Cheatsheet</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contents <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#page-headers">Page Headers</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#navbars">Navbars</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#navs">Navs</a></li>
+                <li><a href="#indicators">Indicators</a></li>
+                <li><a href="#progress-bars">Progress Bars</a></li>
+                <li><a href="#containers">Containers</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="cheatsheet_target.html" target="_blank">Target</a>
+            </li>
+            <li>
+              <a href="http://getbootstrap.com/" target="_blank">Official Docs</a>
+            </li>
+            <li>
+              <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome Icons</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="main-jumbotron" class="jumbotron">
+      <div class="container text-center">
+        <h1>My Bootstrap Cheatsheet</h1>
+        <p>Examples of commonly used CSS and components, with links to the full documentation.</p>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contents <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#page-headers">Page Headers</a></li>
-              <li><a href="#typography">Typography</a></li>
-              <li><a href="#buttons">Buttons</a></li>
-              <li><a href="#navbars">Navbars</a></li>
-              <li><a href="#tables">Tables</a></li>
-              <li><a href="#forms">Forms</a></li>
-              <li><a href="#navs">Navs</a></li>
-              <li><a href="#indicators">Indicators</a></li>
-              <li><a href="#progress-bars">Progress Bars</a></li>
-              <li><a href="#containers">Containers</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="cheatsheet_target.html" target="_blank">Target</a>
-          </li>
-          <li>
-            <a href="http://getbootstrap.com/" target="_blank">Official Docs</a>
-          </li>
-          <li>
-            <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome Icons</a>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  <div id="main-jumbotron" class="jumbotron">
-    <div class="container text-center">
-      <h1>My Bootstrap Cheatsheet</h1>
-      <p>Examples of commonly used CSS and components, with links to the full documentation.</p>
-    </div>
-  </div>
-
-  <div class="container">
-    <a name="page-headers"></a>
-    <div class="page-header">
-      <h2>
-        Page Headers
-        <small>with subtext</small>
-        <a href="http://getbootstrap.com/components/#page-header" target="_blank" class="btn btn-default btn-xs">
-          <i class="fa fa-question-circle"></i>
-        </a>
-      </h2>
     </div>
 
-    <a name="typography"></a>
-    <div class="page-header">
-      <h2>
-        Typography
-        <a href="http://getbootstrap.com/css/#type" target="_blank" class="btn btn-default btn-xs">
-          <i class="fa fa-question-circle"></i>
-        </a>
-      </h2>
-    </div>
-
-    <a name="buttons"></a>
-    <div class="page-header">
-      <h2>
-        Buttons
-        <div class="btn-group">
-          <a href="http://getbootstrap.com/css/#buttons" target="_blank" class="btn btn-default btn-xs">
+    <div class="container">
+      <a name="page-headers"></a>
+      <div class="page-header">
+        <h2>
+          Page Headers
+          <small>with subtext</small>
+          <a href="http://getbootstrap.com/components/#page-header" target="_blank" class="btn btn-default btn-xs">
             <i class="fa fa-question-circle"></i>
           </a>
-          <a href="#buttons" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://getbootstrap.com/css/#buttons" target="_blank">Colors, sizes, and states</a></li>
-            <li><a href="http://getbootstrap.com/components/#btn-groups" target="_blank">Button Groups</a></li>
-            <li><a href="http://getbootstrap.com/components/#btn-dropdowns" target="_blank">Button Dropdowns</a></li>
-          </ul>
+        </h2>
+      </div>
+
+      <a name="typography"></a>
+      <div class="page-header">
+        <h2>
+          Typography
+          <a href="http://getbootstrap.com/css/#type" target="_blank" class="btn btn-default btn-xs">
+            <i class="fa fa-question-circle"></i>
+          </a>
+        </h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <p class="lead">Lead paragraph text.  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Example Body Text</h2>
+            <p>Nullam quis risus eget <a href="">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula</p>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+            <p>The following snippet of text is <strong>rendered as bold text.</strong></p>
+            <p>The following snippet of text is <em>rendered as italicized text.</em></p>
+            <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Emphasis Classes</h2>
+            <p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="text-primary">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-success">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="text-warning">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p class="text-danger">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          </div>
         </div>
-      </h2>
+        <div class="row">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Block Quotes</h3>
+              <hr />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <blockquote class="blockquote-reverse">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <a name="buttons"></a>
+      <div class="page-header">
+        <h2>
+          Buttons
+          <div class="btn-group">
+            <a href="http://getbootstrap.com/css/#buttons" target="_blank" class="btn btn-default btn-xs">
+              <i class="fa fa-question-circle"></i>
+            </a>
+            <a href="#buttons" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://getbootstrap.com/css/#buttons" target="_blank">Colors, sizes, and states</a></li>
+              <li><a href="http://getbootstrap.com/components/#btn-groups" target="_blank">Button Groups</a></li>
+              <li><a href="http://getbootstrap.com/components/#btn-dropdowns" target="_blank">Button Dropdowns</a></li>
+            </ul>
+          </div>
+        </h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-link">Link</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-default" disabled="disabled">Default</button>
+                <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
+                <button type="button" class="btn btn-success" disabled="disabled">Success</button>
+                <button type="button" class="btn btn-info" disabled="disabled">Info</button>
+                <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
+                <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
+                <button type="button" class="btn btn-link" disabled="disabled">Link</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-primary">Default button</button>
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-group" role="group">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">Default</button>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="btn-group" role="group">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="btn-group" role="group">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="btn-group" role="group">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="btn-group" role="group">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-default btn-block">Block level button</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-group btn-group-justified">
+                  <a href="#buttons" class="btn btn-default">Left</a>
+                  <a href="#buttons" class="btn btn-default">Middle</a>
+                  <a href="#buttons" class="btn btn-default">Right</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-toolbar" role="toolbar" aria-label="...">
+                  <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Toolbar</button>
+                    <button type="button" class="btn btn-default">1</button>
+                    <button type="button" class="btn btn-default">2</button>
+                    <button type="button" class="btn btn-default">3</button>
+                    <button type="button" class="btn btn-default">4</button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">5</button>
+                    <button type="button" class="btn btn-default">6</button>
+                    <button type="button" class="btn btn-default">7</button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">8</button>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-group-vertical" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default">Vertical</button>
+                  <button type="button" class="btn btn-default">Button</button>
+                  <button type="button" class="btn btn-default">Button</button>
+                  <button type="button" class="btn btn-default">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <a name="navbars"></a>
+      <div class="page-header">
+        <h2>
+          Navbars
+          <a href="http://getbootstrap.com/components/#navbar" target="_blank" class="btn btn-default btn-xs">
+            <i class="fa fa-question-circle"></i>
+          </a>
+        </h2>
+      </div>
+
+      <a name="tables"></a>
+      <div class="page-header">
+        <h2>
+          Tables
+          <a href="http://getbootstrap.com/css/#tables" target="_blank" class="btn btn-default btn-xs">
+            <i class="fa fa-question-circle"></i>
+          </a>
+        </h2>
+      </div>
+
+      <a name="forms"></a>
+      <div class="page-header">
+        <h2>
+          Forms
+          <a href="http://getbootstrap.com/css/#forms" target="_blank" class="btn btn-default btn-xs">
+            <i class="fa fa-question-circle"></i>
+          </a>
+        </h2>
+      </div>
+
+      <a name="navs"></a>
+      <div class="page-header">
+        <h2>
+          Navs
+          <a href="http://getbootstrap.com/components/#nav" target="_blank" class="btn btn-default btn-xs">
+            <i class="fa fa-question-circle"></i>
+          </a>
+        </h2>
+      </div>
+
+      <a name="indicators"></a>
+      <div class="page-header">
+        <h2>
+          Indicators
+        </h2>
+      </div>
+
+      <a name="progress-bars"></a>
+      <div class="page-header">
+        <h2>
+          Progress Bars
+          <a href="http://getbootstrap.com/components/#progress" target="_blank" class="btn btn-default btn-xs">
+            <i class="fa fa-question-circle"></i>
+          </a>
+        </h2>
+      </div>
+
+      <a name="containers"></a>
+      <div class="page-header">
+        <h2>
+          Containers
+        </h2>
+      </div>
+
+      <hr>
+
     </div>
-
-    <a name="navbars"></a>
-    <div class="page-header">
-      <h2>
-        Navbars
-        <a href="http://getbootstrap.com/components/#navbar" target="_blank" class="btn btn-default btn-xs">
-          <i class="fa fa-question-circle"></i>
-        </a>
-      </h2>
-    </div>
-
-    <a name="tables"></a>
-    <div class="page-header">
-      <h2>
-        Tables
-        <a href="http://getbootstrap.com/css/#tables" target="_blank" class="btn btn-default btn-xs">
-          <i class="fa fa-question-circle"></i>
-        </a>
-      </h2>
-    </div>
-
-    <a name="forms"></a>
-    <div class="page-header">
-      <h2>
-        Forms
-        <a href="http://getbootstrap.com/css/#forms" target="_blank" class="btn btn-default btn-xs">
-          <i class="fa fa-question-circle"></i>
-        </a>
-      </h2>
-    </div>
-
-    <a name="navs"></a>
-    <div class="page-header">
-      <h2>
-        Navs
-        <a href="http://getbootstrap.com/components/#nav" target="_blank" class="btn btn-default btn-xs">
-          <i class="fa fa-question-circle"></i>
-        </a>
-      </h2>
-    </div>
-
-    <a name="indicators"></a>
-    <div class="page-header">
-      <h2>
-        Indicators
-      </h2>
-    </div>
-
-    <a name="progress-bars"></a>
-    <div class="page-header">
-      <h2>
-        Progress Bars
-        <a href="http://getbootstrap.com/components/#progress" target="_blank" class="btn btn-default btn-xs">
-          <i class="fa fa-question-circle"></i>
-        </a>
-      </h2>
-    </div>
-
-    <a name="containers"></a>
-    <div class="page-header">
-      <h2>
-        Containers
-      </h2>
-    </div>
-
-    <hr>
-
-  </div>
-</body>
-</html>
+  </body>
+  </html>
